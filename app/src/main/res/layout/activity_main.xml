@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabPlus"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/my_shape"
+        android:backgroundTint="@color/main_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_add"
+        android:tint="@color/white"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabLayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/white"
+        android:visibility="invisible"
+        android:background="@drawable/my_shape"
+        android:backgroundTint="@color/main_dark"
+        app:layout_constraintBottom_toTopOf="@+id/fabPlus"
+        app:layout_constraintEnd_toEndOf="@+id/fabPlus"
+        app:srcCompat="@drawable/ic_layers" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabMyLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/white"
+        android:visibility="invisible"
+        android:background="@drawable/my_shape"
+        android:backgroundTint="@color/main_dark"
+        app:layout_constraintBottom_toTopOf="@+id/fabLayer"
+        app:layout_constraintEnd_toEndOf="@+id/fabLayer"
+        app:srcCompat="@drawable/ic_marker" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/white"
+        android:visibility="invisible"
+        android:background="@drawable/my_shape"
+        android:backgroundTint="@color/main_dark"
+        app:layout_constraintBottom_toTopOf="@+id/fabMyLocation"
+        app:layout_constraintEnd_toEndOf="@+id/fabMyLocation"
+        app:srcCompat="@drawable/ic_refresh" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNavigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/white"
+        android:visibility="invisible"
+        android:background="@drawable/my_shape"
+        android:backgroundTint="@color/main_dark"
+        app:layout_constraintBottom_toTopOf="@+id/fabRefresh"
+        app:layout_constraintEnd_toEndOf="@+id/fabRefresh"
+        app:srcCompat="@drawable/ic_marker" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:tint="@color/white"
+        android:visibility="invisible"
+        android:background="@drawable/my_shape"
+        android:backgroundTint="@color/main_dark"
+        app:layout_constraintBottom_toTopOf="@+id/fabRefresh"
+        app:layout_constraintEnd_toEndOf="@+id/fabRefresh"
+        app:srcCompat="@drawable/ic_info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
